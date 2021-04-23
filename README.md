@@ -38,7 +38,7 @@ Those scripts were tested in python 3.5 with following libraries:<br>
 
 
 <a name="files"></a>
-## 3-Files description
+## 3 - Files description
 
     * app
         * run.py - Start a webserver to interact with the classification results
