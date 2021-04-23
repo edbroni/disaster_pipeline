@@ -1,6 +1,6 @@
-#Disaster Response
+# Disaster Response
 
-##Table of contents
+## Table of contents
 
     1- [Motivation](#motivation)
     2- [Dependencies](#dependencies)
@@ -10,7 +10,7 @@
     6- [Licensing](#license)
 
 <a name="motivation"></a>
-## 1-Motivation
+## 1 - Motivation
 
 Offer help as quickly as possible in an emergency to minimize damage and
 lost lifes. For this achievement it is necessary to keep an eye on where the 
@@ -21,18 +21,18 @@ With this purpose in mind, the Udacity Data Science course gave to us this task:
 multiclass classifications to help with crisis coordination.
 
 <a name="dependencies"></a>
-## 2-Dependencies
+## 2 - Dependencies
 
 Those scripts were tested in python 3.5 with following libraries:<br>
-    * Scikit Learn 0.24.1
-    * NLTK 3.6.1
-    * Numpy 1.19
-    * Pandas 1.1.5
-    * SQLAlchemy 1.4.7
-    * Flask 1.1.2
-    * Plotly 4.14.3
-    * Pickle 2.0
-    * joblib 1.0.0
+	*  Scikit Learn 0.24.1
+	*  NLTK 3.6.1
+	*  Numpy 1.19
+	*  Pandas 1.1.5
+	*  SQLAlchemy 1.4.7
+	*  Flask 1.1.2
+	*  Plotly 4.14.3
+	*  Pickle 2.0
+	*  joblib 1.0.0
 
 <a name="files"></a>
 ## 3-Files description
@@ -57,13 +57,13 @@ attributes form messages
 messages
 
 <a name="install"></a>
-## 4-Installing
+## 4 - Installing
 
 Clone the repository
    git clone https://github.com/edbroni/disaster_pipeline.git
 
 <a name="execute"></a>
-## 5-Executing
+## 5 - Executing
 
 Run the ETL pipeline inside data folder (extract and cleanning the messages)<br>
     python3 process_data.py disaster_messages.csv disaster_categories.csv 
@@ -75,13 +75,13 @@ Run the machine learning algorithm inside models folder (to train the model with
 
 Start a webserver to display the result of classification in action, inside app
 folder.<br>
-   python3 run.py
+    python3 run.py
 <br>
 Type this address in a browser http://0.0.0.0:3001
 
 <a name="license"></a>
-## 6-Licensing
+## 6 - Licensing
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 <br>
-This project is licensed under MIT License - see License(LICENSE) for details
+This project is licensed under MIT License - see [License](LICENSE) for details
