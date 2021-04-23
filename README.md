@@ -82,4 +82,5 @@ Type this address in a browser http://0.0.0.0:3001
 ##6-Licensing
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<br>
 This project is licensed under MIT License - see License.md for details
