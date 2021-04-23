@@ -1,12 +1,12 @@
 # Disaster Response
 
 ## Table of contents
-1- [Motivation](#motivation)
-2- [Dependencies](#dependencies)
-3- [Files description](#files)
-4- [Installing](#install)
-5- [Executing](#execute)
-6- [Licensing](#license)
+1. [Motivation](#motivation)
+2. [Dependencies](#dependencies)
+3. [Files description](#files)
+4. [Installing](#install)
+5. [Executing](#execute)
+6. [Licensing](#license)
 
 
 <a name="motivation"></a>
@@ -67,20 +67,19 @@ Clone the repository
 <a name="execute"></a>
 ## 5 - Executing
 
-    1- Run the ETL pipeline inside data folder (extract and cleanning the messages)
+Run the ETL pipeline inside data folder (extract and cleanning the messages)
 
     `$ python3 process_data.py disaster_messages.csv disaster_categories.csv Messages_cleaned.db`
 
-    2- Run the machine learning algorithm inside models folder (to train the model with the messages database)
+Run the machine learning algorithm inside models folder (to train the model with the messages database)
 
     `$ python3 train_classify.py Messages_cleaned.db model.pkl`
 
-    3- Start a webserver to display the result of classification in action, inside app   
-folder.
+Start a webserver to display the result of classification in action, inside app folder.
 
     `$ python3 run.py`
 
-    4- Type this address in a browser http://0.0.0.0:3001
+Type this address in a browser http://0.0.0.0:3001
 
 
 <a name="license"></a>
