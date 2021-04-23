@@ -2,12 +2,12 @@
 
 ## Table of contents
 
-    1- [Motivation](#motivation)
-    2- [Dependencies](#dependencies)
-    3- [Files description](#files)
-    4- [Installing](#install)
-    5- [Executing](#execute)
-    6- [Licensing](#license)
+1- [Motivation](#motivation)
+2- [Dependencies](#dependencies)
+3- [Files description](#files)
+4- [Installing](#install)
+5- [Executing](#execute)
+6- [Licensing](#license)
 
 <a name="motivation"></a>
 ## 1 - Motivation
@@ -24,15 +24,16 @@ multiclass classifications to help with crisis coordination.
 ## 2 - Dependencies
 
 Those scripts were tested in python 3.5 with following libraries:<br>
-	*  Scikit Learn 0.24.1
-	*  NLTK 3.6.1
-	*  Numpy 1.19
-	*  Pandas 1.1.5
-	*  SQLAlchemy 1.4.7
-	*  Flask 1.1.2
-	*  Plotly 4.14.3
-	*  Pickle 2.0
-	*  joblib 1.0.0
+
+	Scikit Learn 0.24.1
+	NLTK 3.6.1
+	Numpy 1.19
+	Pandas 1.1.5
+	SQLAlchemy 1.4.7
+	Flask 1.1.2
+	Plotly 4.14.3
+	Pickle 2.0
+	joblib 1.0.0
 
 <a name="files"></a>
 ## 3-Files description
