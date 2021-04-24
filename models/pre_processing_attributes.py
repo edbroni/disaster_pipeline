@@ -80,19 +80,18 @@ def build_model():
     pipeline = Pipeline([
             ('vect', CountVectorizer(tokenizer=tokenization)),
             ('tfidf',TfidfTransformer(smooth_idf=True)),
-#            ('clf', MultiOutputClassifier(SGDClassifier(max_iter=2000,random_state=123,
-#                                                warm_start=False,n_jobs=3,alpha=0.0001,
-#                                                power_t=0.25,class_weight=None,
-#                                                shuffle=True,
-#                                                fit_intercept=False,
-#                                                loss='modified_huber'))),
-            ('clf', MultiOutputClassifier(RandomForestClassifier())),
+            ('clf', MultiOutputClassifier(SGDClassifier(max_iter=2000,random_state=123,
+                                                warm_start=False,n_jobs=3,alpha=0.0001,
+                                                power_t=0.25,class_weight=None,
+                                                shuffle=True,
+                                                fit_intercept=False,
+                                                loss='modified_huber'))),
     ])
 
     parameters = {
-#        'clf__estimator__class_weight':[None,'balanced'],
-#        'clf__estimator__alpha': [0.001,0.0001],
-#        'clf__estimator__penalty': ['l2','elasticnet'],
+        'clf__estimator__class_weight':[None,'balanced'],
+        'clf__estimator__alpha': [0.001,0.0001],
+        'clf__estimator__penalty': ['l2','elasticnet'],
     }
 
     #Preparing a grid search to output
@@ -113,7 +112,7 @@ def evaluate_model(model, data_test, target_test, category_names):
         print(classification_report(target_test[:,num],prediction[:,num]),'\n')
 
 def save_model(model, model_filepath):
-    '''Save the machine learning model.
+    '''Save the machine learning model in a file.
     Input: model - the model file
            model_filepath - the file path to save the model
     Output: '''
